@@ -4,8 +4,7 @@ url: >-
 apis:
   - aid: u-s-access-board:u-s-access-board
     name: U.S. Access Board
-    tags:
-      - API
+    tags: []
     humanURL: https://www.access-board.gov/
     properties:
       - url: https://www.access-board.gov/
