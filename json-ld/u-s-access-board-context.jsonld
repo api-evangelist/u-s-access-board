@@ -1,0 +1,100 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "ab": "https://www.access-board.gov/schema/",
+    "schema": "https://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+
+    "AccessibilityStandard": "ab:AccessibilityStandard",
+    "GuidanceDocument": "ab:GuidanceDocument",
+    "Complaint": "ab:Complaint",
+    "Training": "ab:Training",
+    "TechnicalAssistance": "ab:TechnicalAssistance",
+
+    "title": {
+      "@id": "schema:name",
+      "@type": "xsd:string"
+    },
+    "name": {
+      "@id": "schema:name",
+      "@type": "xsd:string"
+    },
+    "description": {
+      "@id": "schema:description",
+      "@type": "xsd:string"
+    },
+    "url": {
+      "@id": "schema:url",
+      "@type": "@id"
+    },
+    "citation": {
+      "@id": "ab:citation",
+      "@type": "xsd:string"
+    },
+    "effectiveDate": {
+      "@id": "schema:datePublished",
+      "@type": "xsd:date"
+    },
+    "publicationDate": {
+      "@id": "schema:datePublished",
+      "@type": "xsd:date"
+    },
+    "authority": {
+      "@id": "dcterms:source",
+      "@type": "xsd:string"
+    },
+    "applicability": {
+      "@id": "ab:applicability",
+      "@type": "xsd:string"
+    },
+    "technicalRequirements": {
+      "@id": "ab:technicalRequirements",
+      "@type": "xsd:string"
+    },
+    "standardType": {
+      "@id": "ab:standardType",
+      "@type": "xsd:string"
+    },
+    "complaintId": {
+      "@id": "dcterms:identifier",
+      "@type": "xsd:string"
+    },
+    "facilityName": {
+      "@id": "ab:facilityName",
+      "@type": "xsd:string"
+    },
+    "facilityAddress": {
+      "@id": "schema:address",
+      "@type": "xsd:string"
+    },
+    "federalFunding": {
+      "@id": "ab:federalFunding",
+      "@type": "xsd:boolean"
+    },
+    "barrierDescription": {
+      "@id": "ab:barrierDescription",
+      "@type": "xsd:string"
+    },
+    "filingDate": {
+      "@id": "schema:dateCreated",
+      "@type": "xsd:date"
+    },
+    "status": {
+      "@id": "ab:status",
+      "@type": "xsd:string"
+    },
+    "format": {
+      "@id": "dcterms:format",
+      "@type": "xsd:string"
+    },
+    "standard": {
+      "@id": "ab:standard",
+      "@type": "xsd:string"
+    },
+    "identifier": {
+      "@id": "dcterms:identifier",
+      "@type": "xsd:string"
+    }
+  }
+}

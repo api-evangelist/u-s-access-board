@@ -1,0 +1,225 @@
+vocabulary: "1.0.0"
+
+info:
+  provider: "U.S. Access Board"
+  description: >-
+    Vocabulary covering the U.S. Access Board's accessibility standards,
+    guidelines, programs, and domain terminology across built environment,
+    transportation, ICT, and medical equipment accessibility.
+  created: "2026-05-03"
+  modified: "2026-05-03"
+
+operational:
+  apis: []
+  resources:
+    - name: accessibility-standards
+      description: >-
+        Formal accessibility requirements developed by the Access Board,
+        including ADA Standards, ABA Standards, Section 508, and Section 255.
+      actions:
+        - publish
+        - update
+        - enforce
+    - name: guidance-documents
+      description: >-
+        Technical assistance documents, animations, and explanatory materials
+        that help stakeholders implement accessibility requirements.
+      actions:
+        - publish
+        - download
+    - name: technical-assistance
+      description: >-
+        Direct support provided by Access Board staff in response to questions
+        about accessibility guidelines and standards.
+      actions:
+        - request
+        - respond
+    - name: training
+      description: >-
+        Webinars, in-person sessions, and online courses teaching how to apply
+        accessibility standards.
+      actions:
+        - register
+        - attend
+    - name: rulemaking
+      description: >-
+        Federal rulemaking process for developing and updating accessibility
+        guidelines and standards, including public comment periods.
+      actions:
+        - propose
+        - comment
+        - finalize
+
+  actions:
+    - name: publish
+      description: Release official standards or guidance documents
+      httpMethod: GET
+      pattern: read
+    - name: update
+      description: Revise existing standards or guidelines
+      httpMethod: POST
+      pattern: write
+    - name: enforce
+      description: Investigate and resolve ABA complaints about inaccessible facilities
+      httpMethod: POST
+      pattern: write
+    - name: download
+      description: Retrieve guidance or standards documents in PDF or HTML format
+      httpMethod: GET
+      pattern: read
+    - name: register
+      description: Sign up for training or webinar events
+      httpMethod: POST
+      pattern: write
+
+  schemas:
+    standards:
+      - name: AccessibilityStandard
+        description: >-
+          A formal regulatory document defining technical and functional
+          accessibility requirements.
+        properties:
+          - title
+          - citation
+          - effectiveDate
+          - authority
+          - applicability
+          - technicalRequirements
+      - name: GuidanceDocument
+        description: >-
+          A non-regulatory document providing interpretive guidance on
+          accessibility standards.
+        properties:
+          - title
+          - standard
+          - publicationDate
+          - format
+          - url
+      - name: Complaint
+        description: >-
+          An Architectural Barriers Act (ABA) complaint filed about an
+          inaccessible federally funded facility.
+        properties:
+          - complaintId
+          - facilityName
+          - facilityAddress
+          - federalFunding
+          - barrierDescription
+          - filingDate
+          - status
+
+  parameters:
+    identifiers:
+      - name: standardId
+        description: Unique identifier for an accessibility standard or guideline
+        type: string
+      - name: complaintId
+        description: Unique identifier for an ABA complaint
+        type: string
+    filters:
+      - name: standardType
+        description: >-
+          Type of standard (ADA, ABA, Section 508, Section 255, PROWAG)
+        type: string
+      - name: publicationDate
+        description: Date a standard or guidance document was published
+        type: string
+        format: date
+
+  enums:
+    standardTypes:
+      - ADA
+      - ABA
+      - Section 508
+      - Section 255
+      - PROWAG
+      - Medical Diagnostic Equipment
+    complaintStatus:
+      - Open
+      - Under Investigation
+      - Resolved
+      - Closed
+    facilityTypes:
+      - Federal Building
+      - Post Office
+      - National Park
+      - Military Installation
+      - Transit Facility
+
+  authentication: []
+
+capability:
+  workflows:
+    - name: accessibility-compliance
+      file: ""
+      description: >-
+        Research and apply accessibility standards for built environment, ICT,
+        and transportation projects.
+      apis: []
+      tools: 0
+      personas:
+        - Architect
+        - Federal Procurement Officer
+      domains:
+        - Built Environment
+        - Information Technology
+        - Transportation
+
+  personas:
+    - id: architect
+      name: Architect
+      description: >-
+        Design and construction professional using ADA/ABA Standards to create
+        accessible buildings and facilities.
+      workflows:
+        - accessibility-compliance
+
+    - id: federal-procurement-officer
+      name: Federal Procurement Officer
+      description: >-
+        Federal agency staff responsible for ensuring ICT products and services
+        comply with Section 508 Standards.
+      workflows:
+        - accessibility-compliance
+
+    - id: telecommunications-manufacturer
+      name: Telecommunications Manufacturer
+      description: >-
+        Technology company using Section 255 Guidelines to build accessible
+        telecommunications equipment.
+      workflows:
+        - accessibility-compliance
+
+    - id: ada-coordinator
+      name: ADA Coordinator
+      description: >-
+        State or local government official ensuring compliance with ADA
+        accessibility requirements.
+      workflows:
+        - accessibility-compliance
+
+  domains:
+    - name: Built Environment
+      description: Physical spaces including buildings, facilities, and public rights-of-way
+    - name: Information Technology
+      description: Software, hardware, and web content accessible under Section 508
+    - name: Transportation
+      description: Transit vehicles, stations, and pedestrian infrastructure
+    - name: Telecommunications
+      description: Telecommunications equipment and customer premises equipment
+    - name: Medical Equipment
+      description: Medical diagnostic equipment used by individuals with disabilities
+
+  namespaces: []
+  binds: []
+
+crossReference:
+  - resource: accessibility-standards
+    operations: []
+    workflows:
+      - accessibility-compliance
+    personas:
+      - Architect
+      - Federal Procurement Officer
+      - Telecommunications Manufacturer
+      - ADA Coordinator
