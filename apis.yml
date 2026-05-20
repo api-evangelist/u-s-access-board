@@ -58,6 +58,10 @@ description: >-
   requirements under the Americans with Disabilities Act (ADA) and Section 508
   of the Rehabilitation Act.
 common:
+  - type: GitHubOrganization
+    url: https://github.com/atbcb
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/us-access-board
   - type: Website
     url: https://www.access-board.gov/
   - type: About
