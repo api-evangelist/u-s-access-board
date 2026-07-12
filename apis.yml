@@ -58,6 +58,8 @@ description: >-
   requirements under the Americans with Disabilities Act (ADA) and Section 508
   of the Rehabilitation Act.
 common:
+  - type: DomainSecurity
+    url: security/u-s-access-board-domain-security.yml
   - type: GitHubOrganization
     url: https://github.com/atbcb
   - type: LinkedIn
@@ -151,6 +153,8 @@ common:
   - type: JSONLD
     url: >-
       https://raw.githubusercontent.com/api-evangelist/u-s-access-board/refs/heads/main/json-ld/u-s-access-board-context.jsonld
+  - url: https://www.access-board.gov/news/
+    type: Blog
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
