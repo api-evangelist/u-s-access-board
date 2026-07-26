@@ -17,11 +17,6 @@ The U.S. Access Board is an independent federal agency that promotes equality fo
 
 ## APIs
 
-### U.S. Access Board
-
-The U.S. Access Board is an independent federal agency that advances accessibility for people with disabilities through the development of accessibility guidelines and standards for the built environment, transit vehicles, public rights-of-way, information and communication technology (ICT), and medical diagnostic equipment. The Access Board develops and maintains the ADA Accessibility Standards, the Revised Section 508 Standards for ICT procurement, and the Revised Section 255 Guidelines for telecommunications equipment.
-
-**Human URL:** [https://www.access-board.gov/](https://www.access-board.gov/)
 
 #### Tags:
 

@@ -1,38 +1,7 @@
 aid: u-s-access-board
 url: >-
   https://raw.githubusercontent.com/api-evangelist/u-s-access-board/refs/heads/main/apis.yml
-apis:
-  - aid: u-s-access-board:u-s-access-board
-    name: U.S. Access Board
-    tags:
-      - Federal Government
-      - Accessibility
-      - Disability
-      - Standards
-    humanURL: https://www.access-board.gov/
-    properties:
-      - url: https://www.access-board.gov/
-        type: Documentation
-      - url: https://www.access-board.gov/about/
-        type: About
-      - url: https://www.access-board.gov/ict/
-        type: Documentation
-        title: ICT Accessibility Standards
-      - url: https://www.access-board.gov/ada/
-        type: Documentation
-        title: ADA Accessibility Standards
-      - url: https://www.access-board.gov/guidance.html
-        type: Documentation
-        title: Guidance Documents
-    description: >-
-      The U.S. Access Board is an independent federal agency that advances
-      accessibility for people with disabilities through the development of
-      accessibility guidelines and standards for the built environment,
-      transit vehicles, public rights-of-way, information and communication
-      technology (ICT), and medical diagnostic equipment. The Access Board
-      develops and maintains the ADA Accessibility Standards, the Revised
-      Section 508 Standards for ICT procurement, and the Revised Section 255
-      Guidelines for telecommunications equipment.
+apis: []
 name: U.S. Access Board
 tags:
   - Federal Government
@@ -42,10 +11,22 @@ tags:
   - Built Environment
   - Transportation
 kind: contract
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+accessModel:
+  pricing: freemium
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Freemium
+  confidence: medium
+  source:
+    - plans
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/u-s-access-board.png
 access: 3rd-Party
 created: '2024-11-20'
-modified: '2026-05-03'
+modified: '2026-07-25'
 position: Consuming
 description: >-
   The U.S. Access Board is an independent federal agency that promotes equality
