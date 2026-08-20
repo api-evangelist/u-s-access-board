@@ -4,6 +4,13 @@ url: >-
 apis: []
 name: U.S. Access Board
 tags:
+  - Federal-Government
+  - Accessibility
+  - Disability
+  - Standards
+  - Built Environment
+  - Transportation
+tags_raw:
   - Federal Government
   - Accessibility
   - Disability
