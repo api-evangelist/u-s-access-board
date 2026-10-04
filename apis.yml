@@ -4,7 +4,7 @@ url: >-
 apis: []
 name: U.S. Access Board
 tags:
-  - Federal-Government
+  - Federal Government
   - Accessibility
   - Disability
   - Standards
@@ -17,6 +17,7 @@ tags_raw:
   - Standards
   - Built Environment
   - Transportation
+  - Federal-Government
 kind: contract
 deliveryModel:
   model: saas
