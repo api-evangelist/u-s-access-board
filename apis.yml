@@ -58,6 +58,12 @@ description: >-
   requirements under the Americans with Disabilities Act (ADA) and Section 508
   of the Rehabilitation Act.
 common:
+  - type: Plans
+    url: plans/u-s-access-board-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/u-s-access-board-rate-limits.yml
+  - type: FinOps
+    url: finops/u-s-access-board-finops.yml
   - type: DomainSecurity
     url: security/u-s-access-board-domain-security.yml
   - type: GitHubOrganization
